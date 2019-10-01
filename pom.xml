@@ -9,8 +9,8 @@
     <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
     <modules>
-        <module>NotifyModule</module>
-        <module>NotifyPlugin</module>
+        <module>notify-module</module>
+        <module>notify-plugin</module>
     </modules>
     <properties>
         <plugin.shade.version>3.2.1</plugin.shade.version>
