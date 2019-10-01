@@ -3,7 +3,7 @@
 ### Example user template
 
 # IntelliJ project files
-.idea
+
 *.iml
 gen
 ### JetBrains template
@@ -154,5 +154,8 @@ local.properties
 .cache-main
 .scala_dependencies
 .worksheet
-!/.idea/codeStyles/Project.xml
-!/.idea/codeStyles/codeStyleConfig.xml
+!/.idea/vcs.xml
+/.idea/vcs.xml
+/.idea/misc.xml
+/.idea/compiler.xml
+/.idea/.gitignore
