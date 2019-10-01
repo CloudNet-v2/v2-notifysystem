@@ -154,3 +154,5 @@ local.properties
 .cache-main
 .scala_dependencies
 .worksheet
+!/.idea/codeStyles/Project.xml
+!/.idea/codeStyles/codeStyleConfig.xml
