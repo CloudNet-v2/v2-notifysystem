@@ -15,9 +15,7 @@
     <properties>
         <plugin.shade.version>3.2.1</plugin.shade.version>
 
-        <notify.version>dev-snapshot</notify.version>
-
-        <dependency.cloudnet.version>dev-snapshot</dependency.cloudnet.version>
+        <dependency.cloudnet.version>2.1.16.1</dependency.cloudnet.version>
         <dependency.spigot.version>1.8.8-R0.1-SNAPSHOT</dependency.spigot.version>
         <dependency.bungeecord.version>1.8-1.12</dependency.bungeecord.version>
     </properties>
