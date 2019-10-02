@@ -42,7 +42,6 @@ pipeline {
     stage('Release ZIP') {
       steps {
         sh '''mkdir -p temp;
-        cp -r .template/* temp/;
         cp notify-module/target/*.jar temp/;
         cp notify-plugin/target/*.jar temp/;'''
         zip archive: true, dir: 'temp', glob: '', zipFile: 'NotifySystem.zip'
