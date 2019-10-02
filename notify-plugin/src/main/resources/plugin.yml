@@ -6,7 +6,7 @@ description: CloudNet Notify Interface for the Central server
 
 main: eu.cloudnetservice.notify.plugin.ProjectMain
 
-softdepend: [CloudNetAPI]
+depend: [CloudNetAPI]
 
 commands:
   signs:
