@@ -13,9 +13,11 @@
         <module>notify-plugin</module>
     </modules>
     <properties>
-        <plugin.shade.version>3.2.1</plugin.shade.version>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 
-        <dependency.cloudnet.version>2.1.16.1</dependency.cloudnet.version>
+        <plugin.compiler.version>3.8.1</plugin.compiler.version>
+
+        <dependency.cloudnet.version>2.1.16</dependency.cloudnet.version>
         <dependency.spigot.version>1.8.8-R0.1-SNAPSHOT</dependency.spigot.version>
         <dependency.bungeecord.version>1.8-1.12</dependency.bungeecord.version>
     </properties>
