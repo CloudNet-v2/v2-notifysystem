@@ -4,13 +4,13 @@ import de.dytanic.cloudnetcore.api.CoreModule;
 
 public class ProjectMain extends CoreModule {
 
-	@Override
-	public void onLoad() {
+    @Override
+    public void onLoad() {
 
-	}
+    }
 
-	@Override
-	public void onBootstrap() {
-		getCloud().getNetworkManager().getModuleProperties().append("notifyService", getCloud().getConfig().isNotifyService());
-	}
+    @Override
+    public void onBootstrap() {
+        getCloud().getNetworkManager().getModuleProperties().append("notifyService", getCloud().getConfig().isNotifyService());
+    }
 }

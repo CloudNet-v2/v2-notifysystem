@@ -6,8 +6,8 @@ import net.md_5.bungee.api.plugin.Plugin;
 
 public class ProjectMain extends Plugin {
 
-	@Override
-	public void onEnable() {
-		CloudAPI.getInstance().getNetworkHandlerProvider().registerHandler(new NotifyNetworkHandler());
-	}
+    @Override
+    public void onEnable() {
+        CloudAPI.getInstance().getNetworkHandlerProvider().registerHandler(new NotifyNetworkHandler());
+    }
 }
