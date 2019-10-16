@@ -14,8 +14,12 @@ import net.md_5.bungee.api.chat.TextComponent;
 import net.md_5.bungee.api.connection.ProxiedPlayer;
 
 import java.util.UUID;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 public class NotifyNetworkHandler implements NetworkHandler {
+    private static final Pattern COMPILE = Pattern.compile("%server%", Pattern.LITERAL);
+
     @Override
     public void onServerAdd(ServerInfo serverInfo) {
         sendNotifyMessage("notify-message-server-add", serverInfo);
@@ -29,25 +33,6 @@ public class NotifyNetworkHandler implements NetworkHandler {
     @Override
     public void onServerRemove(ServerInfo serverInfo) {
         sendNotifyMessage("notify-message-server-remove", serverInfo);
-    }
-
-    private void sendNotifyMessage(String key, ServerInfo serverInfo) {
-        if (CloudAPI.getInstance().getModuleProperties().contains("notifyService") && CloudAPI.getInstance()
-                                                                                             .getModuleProperties()
-                                                                                             .getBoolean("notifyService")) {
-            for (ProxiedPlayer proxiedPlayer : ProxyServer.getInstance().getPlayers()) {
-                if (proxiedPlayer.hasPermission("cloudnet.notify")) {
-                    proxiedPlayer.sendMessage(new TextComponent(ChatColor.translateAlternateColorCodes('&',
-                        CloudAPI.getInstance()
-                                .getCloudNetwork()
-                                .getMessages()
-                                .getString(key)
-                                .replace("%server%",
-                                    serverInfo.getServiceId()
-                                              .getServerId()))));
-                }
-            }
-        }
     }
 
     @Override
@@ -108,5 +93,21 @@ public class NotifyNetworkHandler implements NetworkHandler {
     @Override
     public void onUpdateOnlineCount(int i) {
 
+    }
+
+    private static void sendNotifyMessage(String key, ServerInfo serverInfo) {
+        if (CloudAPI.getInstance().getModuleProperties().contains("notifyService") &&
+            CloudAPI.getInstance().getModuleProperties().getBoolean("notifyService")) {
+            for (ProxiedPlayer proxiedPlayer : ProxyServer.getInstance().getPlayers()) {
+                if (proxiedPlayer.hasPermission("cloudnet.notify")) {
+                    proxiedPlayer.sendMessage(new TextComponent(ChatColor.translateAlternateColorCodes('&',
+                        COMPILE.matcher(CloudAPI.getInstance()
+                                                .getCloudNetwork()
+                                                .getMessages()
+                                                .getString(key)).replaceAll(Matcher.quoteReplacement(serverInfo.getServiceId()
+                                                                                                               .getServerId())))));
+                }
+            }
+        }
     }
 }
