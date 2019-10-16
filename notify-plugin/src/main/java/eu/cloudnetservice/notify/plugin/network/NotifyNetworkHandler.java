@@ -10,6 +10,7 @@ import de.dytanic.cloudnet.lib.server.info.ServerInfo;
 import de.dytanic.cloudnet.lib.utility.document.Document;
 import net.md_5.bungee.api.ChatColor;
 import net.md_5.bungee.api.ProxyServer;
+import net.md_5.bungee.api.chat.TextComponent;
 import net.md_5.bungee.api.connection.ProxiedPlayer;
 
 import java.util.UUID;
@@ -17,22 +18,7 @@ import java.util.UUID;
 public class NotifyNetworkHandler implements NetworkHandler {
     @Override
     public void onServerAdd(ServerInfo serverInfo) {
-        if (CloudAPI.getInstance().getModuleProperties().contains("notifyService") && CloudAPI.getInstance()
-                                                                                              .getModuleProperties()
-                                                                                              .getBoolean("notifyService")) {
-            for (ProxiedPlayer proxiedPlayer : ProxyServer.getInstance().getPlayers()) {
-                if (proxiedPlayer.hasPermission("cloudnet.notify")) {
-                    proxiedPlayer.sendMessage(ChatColor.translateAlternateColorCodes('&',
-                        CloudAPI.getInstance()
-                                .getCloudNetwork()
-                                .getMessages()
-                                .getString("notify-message-server-add")
-                                .replace("%server%",
-                                    serverInfo.getServiceId()
-                                              .getServerId())));
-                }
-            }
-        }
+        sendNotifyMessage("notify-message-server-add", serverInfo);
     }
 
     @Override
@@ -42,19 +28,23 @@ public class NotifyNetworkHandler implements NetworkHandler {
 
     @Override
     public void onServerRemove(ServerInfo serverInfo) {
+        sendNotifyMessage("notify-message-server-remove", serverInfo);
+    }
+
+    private void sendNotifyMessage(String key, ServerInfo serverInfo) {
         if (CloudAPI.getInstance().getModuleProperties().contains("notifyService") && CloudAPI.getInstance()
-                                                                                              .getModuleProperties()
-                                                                                              .getBoolean("notifyService")) {
+                                                                                             .getModuleProperties()
+                                                                                             .getBoolean("notifyService")) {
             for (ProxiedPlayer proxiedPlayer : ProxyServer.getInstance().getPlayers()) {
                 if (proxiedPlayer.hasPermission("cloudnet.notify")) {
-                    proxiedPlayer.sendMessage(ChatColor.translateAlternateColorCodes('&',
+                    proxiedPlayer.sendMessage(new TextComponent(ChatColor.translateAlternateColorCodes('&',
                         CloudAPI.getInstance()
                                 .getCloudNetwork()
                                 .getMessages()
-                                .getString("notify-message-server-remove")
+                                .getString(key)
                                 .replace("%server%",
                                     serverInfo.getServiceId()
-                                              .getServerId())));
+                                              .getServerId()))));
                 }
             }
         }
