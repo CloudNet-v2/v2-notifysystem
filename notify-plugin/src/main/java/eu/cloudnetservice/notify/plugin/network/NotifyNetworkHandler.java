@@ -105,11 +105,11 @@ public class NotifyNetworkHandler implements NetworkHandler {
             for (ProxiedPlayer proxiedPlayer : ProxyServer.getInstance().getPlayers()) {
                 if (proxiedPlayer.hasPermission("cloudnet.notify")) {
                     proxiedPlayer.sendMessage(new TextComponent(ChatColor.translateAlternateColorCodes('&',
-                        Pattern.compile("%server%", Pattern.LITERAL).matcher(CloudAPI.getInstance()
-                                                       .getCloudNetwork()
-                                                       .getMessages()
-                                                       .getString(key)).replaceAll(Matcher.quoteReplacement(serverInfo.getServiceId()
-                                                                                                               .getServerId())))));
+                        CloudAPI.getInstance()
+                                .getCloudNetwork()
+                                .getMessages()
+                                .getString(key).replace("%server%",serverInfo.getServiceId()
+                                                                             .getServerId()))));
                 }
             }
         }
