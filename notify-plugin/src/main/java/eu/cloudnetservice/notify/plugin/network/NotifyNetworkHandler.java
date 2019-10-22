@@ -18,7 +18,6 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 public class NotifyNetworkHandler implements NetworkHandler {
-    private static final Pattern COMPILE = Pattern.compile("%server%", Pattern.LITERAL);
 
     @Override
     public void onServerAdd(ServerInfo serverInfo) {
@@ -95,16 +94,21 @@ public class NotifyNetworkHandler implements NetworkHandler {
 
     }
 
+    /**
+     * Send the notification message to all player they have the permissions
+     * @param key The language key of the message
+     * @param serverInfo The server information's
+     */
     private static void sendNotifyMessage(String key, ServerInfo serverInfo) {
         if (CloudAPI.getInstance().getModuleProperties().contains("notifyService") &&
             CloudAPI.getInstance().getModuleProperties().getBoolean("notifyService")) {
             for (ProxiedPlayer proxiedPlayer : ProxyServer.getInstance().getPlayers()) {
                 if (proxiedPlayer.hasPermission("cloudnet.notify")) {
                     proxiedPlayer.sendMessage(new TextComponent(ChatColor.translateAlternateColorCodes('&',
-                        COMPILE.matcher(CloudAPI.getInstance()
-                                                .getCloudNetwork()
-                                                .getMessages()
-                                                .getString(key)).replaceAll(Matcher.quoteReplacement(serverInfo.getServiceId()
+                        Pattern.compile("%server%", Pattern.LITERAL).matcher(CloudAPI.getInstance()
+                                                       .getCloudNetwork()
+                                                       .getMessages()
+                                                       .getString(key)).replaceAll(Matcher.quoteReplacement(serverInfo.getServiceId()
                                                                                                                .getServerId())))));
                 }
             }
