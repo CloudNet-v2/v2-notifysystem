@@ -1,0 +1,9 @@
+name: NotifySystem
+version: ${notify.version}
+author: TheMeinerLP
+website: https://cloudnetservice.eu/
+description: CloudNet Notify Interface for the Central server
+main: eu.cloudnetservice.notify.plugin.ProjectMain
+
+depend: [CloudNetAPI]
+
