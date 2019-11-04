@@ -13,19 +13,8 @@
 # Notify System | The Cloud Network Environment Technology 2 Notify System
 ![Image of CloudNet](https://cdn.discordapp.com/attachments/325383142464552972/354670548292206594/CloudNet.png)
 
-
 This is the Notify System for CloudNet 2.2.0
-
-For general information about CloudNet go to [spigotmc.org](https://www.spigotmc.org/resources/cloudnet-the-cloud-network-environment-technology.42059/). 
-
-### Requirements
-
- * Java 8
- * Linux/Windows server with a minimum of 2GB DDR3 Memory and 2 vCores
- * CloudNet 2.2.0
  
- **The use of Linux containers (LXC) or OpenVZ containers (OVZ) is discouraged. There are many issues with their stability.**  
-Use of KVM virtualization or dedicated servers is recommended.
 
  ### Support
  
