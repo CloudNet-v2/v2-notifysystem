@@ -46,12 +46,5 @@ Maven:
         <version>1.0-SNAPSHOT</version>
         <scope>provided</scope>
     </dependency>
-     <!-- CloudNet Core -->
-    <dependency>
-        <groupId>eu.cloudnetservice</groupId>
-        <artifactId>NotifyModule</artifactId>
-        <version>1.0-SNAPSHOT</version>
-        <scope>provided</scope>
-    </dependency>
 </dependencies>
 ```
