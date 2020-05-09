@@ -18,14 +18,14 @@ This is the Notification System for CloudNet 2.2.0
 ___
  ### Support
  
- #### Spigot-Support
- | Spigot-Version | 1.8.X | 1.9.X | 1.10.X | 1.11.X | 1.12.X | 1.13.X | 1.14.X | 1.15.X |
+ #### Minecraft-Support
+ | Minecraft-Version | 1.8.X | 1.9.X | 1.10.X | 1.11.X | 1.12.X | 1.13.X | 1.14.X | 1.15.X |
  |----------------|-------|-------|--------|--------|--------|--------|--------|--------|
  | Spigot | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
  | PaperSpigot | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
 
- #### BungeeCord-Support
- | BungeeCord-Version | 1.8.X | 1.9.X | 1.10.X | 1.11.X | 1.12.X | 1.13.X | 1.14.X | 1.15.X |
+ #### Proxy-Support
+ | Proxy-Version | 1.8.X | 1.9.X | 1.10.X | 1.11.X | 1.12.X | 1.13.X | 1.14.X | 1.15.X |
  |----------------|-------|-------|--------|--------|--------|--------|--------|--------|
  | BungeeCord(Latest only) | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
  
@@ -52,7 +52,7 @@ Maven:
 <repositories>
     <repository>
         <id>cloudnet-repo</id>
-        <url>https://repo.cloudnetservice.eu/repository/releases</url>
+        <url>https://repo.cloudnetservice.eu/repository/snapshots</url>
     </repository>
 </repositories>
 
