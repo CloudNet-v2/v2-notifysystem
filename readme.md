@@ -17,11 +17,16 @@ This is the Notification System for CloudNet 2.2.0
  
 
  ### Support
- 
-  * Spigot-Support » 1.8 - 1.15.X
-    * Also all forks
-  * BungeeCord-Support » 1.8 - 1.15.X
-    * Also all forks
+ #### Spigot-Support
+ | Spigot-Version | 1.8.X | 1.9.X | 1.10.X | 1.11.X | 1.12.X | 1.13.X | 1.14.X | 1.15.X |
+ |----------------|-------|-------|--------|--------|--------|--------|--------|--------|
+ | Spigot | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
+ | PaperSpigot | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
+
+ #### BungeeCord-Support
+ | BungeeCord-Version | 1.8.X | 1.9.X | 1.10.X | 1.11.X | 1.12.X | 1.13.X | 1.14.X | 1.15.X |
+ |----------------|-------|-------|--------|--------|--------|--------|--------|--------|
+ | BungeeCord | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
     
 ### Discord
  *  [Discord Invite](https://discord.gg/CPCWr7w)
