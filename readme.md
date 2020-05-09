@@ -15,7 +15,7 @@
 
 This is the Notification System for CloudNet 2.2.0
  
-
+___
  ### Support
  
  #### Spigot-Support
@@ -34,14 +34,19 @@ This is the Notification System for CloudNet 2.2.0
  |------------------|-----------|
  | 2.1.17 below | :x: |
  | 2.2 above| :heavy_check_mark: |
- | Complete generation 3 | :x: | 
+ | Complete generation 3 | :x: |
+  
+___
     
 ### Discord
  *  [Discord Invite](https://discord.gg/CPCWr7w)
  
+___
+
+ 
 ### Developer
 If you would like to contribute to this repository, feel free to fork the repo and then create a pull request to our current dev branch. 
-  
+ 
 Maven:
 ```xml
 <repositories>
