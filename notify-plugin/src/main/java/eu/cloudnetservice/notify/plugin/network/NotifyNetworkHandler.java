@@ -14,8 +14,6 @@ import net.md_5.bungee.api.chat.TextComponent;
 import net.md_5.bungee.api.connection.ProxiedPlayer;
 
 import java.util.UUID;
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
 
 public class NotifyNetworkHandler implements NetworkHandler {
 
@@ -108,8 +106,8 @@ public class NotifyNetworkHandler implements NetworkHandler {
                         CloudAPI.getInstance()
                                 .getCloudNetwork()
                                 .getMessages()
-                                .getString(key).replace("%server%",serverInfo.getServiceId()
-                                                                             .getServerId()))));
+                                .getString(key).replace("%server%", serverInfo.getServiceId()
+                                                                              .getServerId()))));
                 }
             }
         }
