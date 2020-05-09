@@ -32,8 +32,8 @@ This is the Notification System for CloudNet 2.2.0
  #### CloudNet-Support
  | CloudNet-Support | Supported | 
  |------------------|-----------|
- | 2.1.17 blow | :x: |
- | 2.2 Above| :heavy_check_mark: |
+ | 2.1.17 below | :x: |
+ | 2.2 above| :heavy_check_mark: |
  | Complete generation 3 | :x: | 
     
 ### Discord
