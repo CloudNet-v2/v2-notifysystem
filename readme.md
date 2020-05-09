@@ -34,7 +34,7 @@ Maven:
 <repositories>
     <repository>
         <id>cloudnet-repo</id>
-        <url>https://cloudnetservice.eu/repositories</url>
+        <url>https://repo.cloudnetservice.eu/repository/releases</url>
     </repository>
 </repositories>
 
