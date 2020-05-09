@@ -17,6 +17,7 @@ This is the Notification System for CloudNet 2.2.0
  
 
  ### Support
+ 
  #### Spigot-Support
  | Spigot-Version | 1.8.X | 1.9.X | 1.10.X | 1.11.X | 1.12.X | 1.13.X | 1.14.X | 1.15.X |
  |----------------|-------|-------|--------|--------|--------|--------|--------|--------|
@@ -26,7 +27,14 @@ This is the Notification System for CloudNet 2.2.0
  #### BungeeCord-Support
  | BungeeCord-Version | 1.8.X | 1.9.X | 1.10.X | 1.11.X | 1.12.X | 1.13.X | 1.14.X | 1.15.X |
  |----------------|-------|-------|--------|--------|--------|--------|--------|--------|
- | BungeeCord | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
+ | BungeeCord(Latest only) | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
+ 
+ #### CloudNet-Support
+ | CloudNet-Support | Supported | 
+ |------------------|-----------|
+ | 2.1.17 blow | :x: |
+ | 2.2 Above| :heavy_check_mark: |
+ | Complete generation 3 | :x: | 
     
 ### Discord
  *  [Discord Invite](https://discord.gg/CPCWr7w)
