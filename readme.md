@@ -53,7 +53,7 @@ ___
 ### Developer
 If you would like to contribute to this repository, feel free to fork the repo and then create a pull request to our current dev branch. 
  
-Maven:
+##### Maven:
 ```xml
 <repositories>
     <repository>
@@ -71,4 +71,16 @@ Maven:
         <scope>provided</scope>
     </dependency>
 </dependencies>
+```
+
+##### Gradle:
+```groovy
+repositories {
+    maven {
+        url "https://repo.cloudnetservice.eu/repository/snapshots"
+    }
+}
+dependencies {
+    compileOnly group: 'eu.cloudnetservice', name: 'NotifyPlugin', version: '1.0-SNAPSHOT'
+}
 ```
