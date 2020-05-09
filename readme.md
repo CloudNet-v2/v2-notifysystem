@@ -10,18 +10,18 @@
 [![GitHub release](https://img.shields.io/github/release/CloudNetService/Cv2-notifysystem.svg)](https://github.com/CloudNetService/v2-notifysystem/releases)
 
 
-# Notify System | The Cloud Network Environment Technology 2 Notify System
+# Notify System | The Cloud Network Environment Technology 2
 ![Image of CloudNet](https://cdn.discordapp.com/attachments/325383142464552972/354670548292206594/CloudNet.png)
 
-This is the Notify System for CloudNet 2.2.0
+This is the Notification System for CloudNet 2.2.0
  
 
  ### Support
  
-  * Spigot-Support » 1.7.10 - 1.14
-    * PaperSpigot, TacoSpigot, Hose, Torch
-  * BungeeCord-Support » 1.7.10 - 1.14
-    * Flexpipe, HexaCord, Waterfall, TraverTine
+  * Spigot-Support » 1.8 - 1.15.X
+    * Also all forks
+  * BungeeCord-Support » 1.8 - 1.15.X
+    * Also all forks
     
 ### Discord
  *  [Discord Invite](https://discord.gg/CPCWr7w)
